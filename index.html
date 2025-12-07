@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>La Réunion — Découvrir l'île</title>
+  <meta name="description" content="Découvrir La Réunion : randonnées, plages, gastronomie et conseils pratiques pour visiter l'île.">
+  <meta name="keywords" content="La Réunion, tourisme, randonnées, plages, gastronomie, voyage, île">
+  <meta name="author" content="Site de démonstration">
+  
+  <meta property="og:site_name" content="La Réunion — Découvrir l'île">
+  <meta property="og:title" content="La Réunion — Découvrir l'île">
+  <meta property="og:description" content="Randonnées, plages, gastronomie et guides pratiques pour visiter La Réunion.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="La Réunion — Découvrir l'île">
+  <meta name="twitter:description" content="Randonnées, plages, gastronomie et guides pratiques pour visiter La Réunion.">
+  <meta name="twitter:image" content="assets/images/hero.jpg">
+  <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+  <link rel="icon" href="assets/images/hero.jpg" type="image/jpeg">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#">La Réunion</a>
+      <a class="btn" href="faune-marine.html" style="margin-left:1rem">Faune marine</a>
+      <a class="btn" href="mafate.html" style="margin-left:0.5rem">Mafate</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+      <nav id="mainNav" class="site-nav" role="navigation" aria-label="Navigation principale">
+        <ul role="menubar">
+          <li role="none"><a role="menuitem" href="#about">À propos</a></li>
+          <li role="none"><a role="menuitem" href="#attractions">Attractions</a></li>
+          <li role="none"><a role="menuitem" href="#map">Carte</a></li>
+          <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+          <li role="none"><a role="menuitem" href="randonnees.html">Randonnées</a></li>
+          <li role="none"><a role="menuitem" href="activites.html">Activités</a></li>
+          <li role="none"><a role="menuitem" href="hebergements.html">Hébergements</a></li>
+          <li role="none"><a role="menuitem" href="gastronomie.html">Gastronomie</a></li>
+          
+          <li role="none"><a role="menuitem" href="pratique.html">Pratique</a></li>
+          <li role="none"><a role="menuitem" href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-inner container">
+        <h1>Bienvenue à La Réunion</h1>
+        <p>Une île de contrastes : volcans, forêts tropicales, plages et culture créole.</p>
+        <a class="btn" href="#attractions">Explorer</a>
+      </div>
+    </section>
+
+    <section id="about" class="container section" aria-labelledby="about-heading">
+      <h2 id="about-heading">À propos de l'île</h2>
+      <p>La Réunion est un département et région d'outre-mer français situé dans l'océan Indien. Elle offre une grande variété de paysages et d'activités : randonnée, plages, découverte culturelle et gastronomie créole.</p>
+    </section>
+
+    <section id="attractions" class="container section grid" aria-labelledby="att-heading" role="region">
+      <h2 id="att-heading">Attractions principales</h2>
+      <div role="list" class="cards-list">
+        <article class="card" role="listitem">
+          <img src="assets/images/piton.jpg" alt="Piton de la Fournaise" loading="lazy" data-full="assets/images/piton.jpg">
+          <h3>Piton de la Fournaise</h3>
+          <p>Un des volcans les plus actifs au monde, célèbre pour ses paysages lunaires et sentiers de randonnée.</p>
+        </article>
+        <article class="card" role="listitem">
+          <img src="assets/images/mafate-1.jpg" alt="Cirque de Mafate" loading="lazy" data-full="assets/images/mafate-1.jpg">
+          <h3>Cirques et montagnes</h3>
+          <p>Les cirques (Mafate, Salazie, Cilaos) offrent des panoramas spectaculaires et des expériences de randonnée incomparables.</p>
+          <p><a class="btn" href="mafate.html">Voir Mafate</a></p>
+        </article>
+        <article class="card" role="listitem">
+          <img src="assets/images/cote.jpg" alt="Plage de l'océan Indien" loading="lazy" data-full="assets/images/cote.jpg">
+          <h3>Plages & lagons</h3>
+          <p>Des plages de sable blanc et lagons protégés idéaux pour la baignade et le snorkeling.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="map" class="container section" aria-labelledby="map-heading">
+      <h2 id="map-heading">Carte</h2>
+      <div class="map-wrapper">
+        
+        <img src="assets/images/map.jpg" alt="Vue générale de La Réunion" loading="lazy" style="width:100%;height:auto;border-radius:6px;">
+      </div>
+    </section>
+
+    <section id="contact" class="container section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <form id="contactForm" class="contact-form" novalidate name="contact">
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" required aria-required="true">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required aria-required="true">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+
+        <button class="btn" type="submit">Envoyer</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> La Réunion — Site de démonstration</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
